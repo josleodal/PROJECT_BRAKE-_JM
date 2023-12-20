@@ -119,7 +119,7 @@ const frases=()=>{
 
     frases.innerHTML=`Es hora de descansar. Apaga y sigue mañana`
 
-} else if(hour>=7&&hour<12){
+} else if ((hour === 7 && minutes >= 1) || (hour > 7 && hour < 14) || (hour === 14 && minutes === 0)){
 
 
     frases.innerHTML=`Buenos días, desayuna fuerte y a darle al código`
@@ -129,7 +129,7 @@ const frases=()=>{
 
 }
 
-else if(hour>=12&&hour<14){
+else if ((hour === 12 && minutes >= 1) || (hour === 13) || (hour === 14 && minutes === 0)){
 
 
     frases.innerHTML=`Echa un rato más pero no olvides comer`
@@ -138,7 +138,7 @@ else if(hour>=12&&hour<14){
 
 
 }
-else if(hour>=14&&hour<16){
+else if((hour === 14 && minutes >= 1) || (hour ===15) || (hour === 16 && minutes === 0)){
 
 
     frases.innerHTML=`Espero que hayas comido`
@@ -147,7 +147,7 @@ else if(hour>=14&&hour<16){
 
 
 }
-else if(hour>=16&&hour<18){
+else if((hour === 16 && minutes >= 1) || (hour ===17) || (hour === 18 && minutes === 0)){
 
 
     frases.innerHTML=`Buenas tardes, el último empujón`
@@ -156,7 +156,7 @@ else if(hour>=16&&hour<18){
 
 
 }
-else if(hour>=18&&hour<22){
+else if((hour === 18 && minutes >= 1) || (hour > 18 && hour < 22) || (hour === 22 && minutes === 0)){
 
 
     frases.innerHTML=` Esto ya son horas extras, ... piensa en parar pronto`
