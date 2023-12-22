@@ -20,8 +20,8 @@ function cambiarImagen() {
      
         const randomImagen = imagenes[Math.floor(Math.random() * imagenes.length)];
         document.body.style.backgroundImage = randomImagen;
-        document.body.style.backgroundRepeat= no-repeat
-        document.body.style.backgroundSize= cover;
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
     
 }
 document.body.style.backgroundImage = 'url("./assets/balance.jpg")'
