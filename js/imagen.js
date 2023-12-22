@@ -16,13 +16,15 @@ function cambiarImagen() {
    
        
       
-    
+      
       if (!document.body.style.backgroundImage) {
         document.body.style.backgroundImage = imagenes[0];
         document.body.style.backgroundRepeat= no-repeat
         document.body.style.backgroundSize= cover;
 
-        // Si ya hay una imagen de fondo, cambiarla de forma aleatoria
+      }
+      
+      else{
         const randomImagen = imagenes[Math.floor(Math.random() * imagenes.length)];
         document.body.style.backgroundImage = randomImagen;
         document.body.style.backgroundRepeat= no-repeat
@@ -30,7 +32,6 @@ function cambiarImagen() {
     }
 }
 
-setInterval(cambiarImagen, 15000);
+setInterval(cambiarImagen, 15000); 
 
 
-//transition: opacity 1s ease-in-out;
