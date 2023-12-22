@@ -1,15 +1,15 @@
 function cambiarImagen() {
     const imagenes = [
-        'url("../assets/balance.jpg")',
-        'url("../assets/beach.jpg")',
-        'url("../assets/buddhism.jpg")',
-        'url("../assets/lake.jpg")',
-        'url("../assets/landscape.jpg")',
-        'url("../assets/ocean.jpg")',
-        'url("../assets/oilseed.jpg")',
-        'url("../assets/seascape.jpg")',
-        'url("../assets/stones.jpg")',
-        'url("../assets/wood.jpg")'
+        'url("assets/balance.jpg")',
+        'url("assets/beach.jpg")',
+        'url("assets/buddhism.jpg")',
+        'url("assets/lake.jpg")',
+        'url("assets/landscape.jpg")',
+        'url("assets/ocean.jpg")',
+        'url("assets/oilseed.jpg")',
+        'url("assets/seascape.jpg")',
+        'url("assets/stones.jpg")',
+        'url("assets/wood.jpg")'
     ];
 
      if (!document.body.style.backgroundImage) {
