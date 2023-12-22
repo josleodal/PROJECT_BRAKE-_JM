@@ -48,14 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-body{
 
-  background-image: url("../assets/balance.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: opacity 1s ease-in-out;
-
-}
 
 .sectionReloj, .sectionTiempo{
 
