@@ -24,7 +24,7 @@ function cambiarImagen() {
         document.body.style.backgroundSize= cover;
     
 }
-
+document.body.style.backgroundImage = 'url("./assets/balance.jpg")'
 setInterval(cambiarImagen, 15000); 
 
 
