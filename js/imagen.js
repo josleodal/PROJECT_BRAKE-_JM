@@ -17,19 +17,12 @@ function cambiarImagen() {
        
       
     
-      if (!document.body.style.backgroundImage) {
-        document.body.style.backgroundImage = imagenes[0];
-        document.body.style.backgroundRepeat= no-repeat
-        document.body.style.backgroundSize= cover;
-
-      }
-      
-      else{
+     
         const randomImagen = imagenes[Math.floor(Math.random() * imagenes.length)];
         document.body.style.backgroundImage = randomImagen;
         document.body.style.backgroundRepeat= no-repeat
         document.body.style.backgroundSize= cover;
-    }
+    
 }
 
 setInterval(cambiarImagen, 15000); 
