@@ -1,22 +1,22 @@
 function cambiarImagen() {
     const imagenes = [
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/balance.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/beach.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/buddhism.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/lake.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/landscape.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/ocean.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/oilseed.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/seascape.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/stones.jpg")',
-        'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/wood.jpg")'
+        'url("assets/balance.jpg")',
+        'url("assets/beach.jpg")',
+        'url("assets/buddhism.jpg")',
+        'url("assets/lake.jpg")',
+        'url("assets/landscape.jpg")',
+        'url("assets/ocean.jpg")',
+        'url("assets/oilseed.jpg")',
+        'url("assets/seascape.jpg")',
+        'url("assets/stones.jpg")',
+        'url("assets/wood.jpg")'
     ];
 
      
    
        
       
-      
+    
       if (!document.body.style.backgroundImage) {
         document.body.style.backgroundImage = imagenes[0];
         document.body.style.backgroundRepeat= no-repeat
