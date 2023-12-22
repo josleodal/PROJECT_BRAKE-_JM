@@ -17,7 +17,7 @@ function cambiarImagen() {
        
       
     
-      if (!document.body.style.backgroundImage) {
+      if (!document.body.style) {
         document.body.style.backgroundImage = imagenes[0];
         document.body.style.backgroundRepeat= no-repeat
         document.body.style.backgroundSize= cover;
