@@ -12,11 +12,13 @@ function cambiarImagen() {
         'url("https://github.com/josleodal/PROJECT_BRAKE-_JM/blob/main/assets/wood.jpg")'
     ];
 
-    const randomImagen = imagenes[Math.floor(Math.random() * imagenes.length)];
-
-    document.body.style.backgroundImage = randomImagen;
+     if (!document.body.style.backgroundImage) {
+        document.body.style.backgroundImage = imagenes[0];
+    } else {
+       
+        const randomImagen = imagenes[Math.floor(Math.random() * imagenes.length)];
+        document.body.style.backgroundImage = randomImagen;
+    }
 }
 
-
 setInterval(cambiarImagen, 15000);
-
