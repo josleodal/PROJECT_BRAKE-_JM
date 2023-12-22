@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reloj</title>
-    <link rel="stylesheet" href="css\style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Aplicación del Clima</title>
+  <link rel="stylesheet" href="css\style.css">
 </head>
-<body class="body">
-    
+<body>
 
-<section class="sectionReloj">
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reloj.html">Reloj</a>
+        <a href="tiempo.html">Tiempo</a>
+        <a href="contraseña.html">Contraseña</a>
+        <a href="enlaces.html">Enlaces</a>
+        <script src="js\imagen.js"></script>
 
-   <div id="estacion">
-
-    
-        <div id="clima"></div>
-    
-    </div>
+    </nav>
 
 
+    <section class="sectionTiempo">
 
-</section>   
+        <div class="containerTiempo">
+            <div class="actualInfo" id="actualInfo"></div>
+            <div class="horaForecast" id="horaForecast"></div>
+          </div>
+
+
+
+    </section>
+ 
+  <script src="js\tiempo.js"></script>
+<script src="js\imagen.js"></script>
 </body>
-<script src="js\tiempo.js"></script>
-
 </html>
+

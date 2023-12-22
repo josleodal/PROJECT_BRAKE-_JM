@@ -3,13 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
     <title>Document</title>
 </head>
-<body>
-    <a href="reloj.html">Reloj</a>
-    <a href="tiempo.html">Tiempo</a>
-    <a href="contraseña.html">Contraseña</a>
-    <a href="enlaces.html">Enlaces</a>
-    <script src="js\imagen.js"></script>
+<body id="indice">
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reloj.html">Reloj</a>
+        <a href="tiempo.html">Tiempo</a>
+        <a href="contraseña.html">Contraseña</a>
+        <a href="enlaces.html">Enlaces</a>
+        <script src="js\imagen.js"></script>
+
+    </nav>
+
+
+    
+  <div id="todo">
+
+    <section class="sectionTiempo">
+
+        <div class="containerTiempo">
+            <div class="actualInfo" id="actualInfo"></div>
+            <div class="horaForecast" id="horaForecast"></div>
+          </div>
+
+
+
+    </section>
+
+    <section class="sectionReloj">
+
+        <div id="frases"></div>
+     
+         <div id="cuadroReloj">
+     
+     
+             <div id="date"></div>
+             <div id="clock"></div>
+         
+         
+         </div>
+     
+     
+     
+     </section>  
+
+     <section  id="sectionEnlace">
+        <div id="containerEnlace">
+            <div>
+                <h1>Añadir Link</h1>
+            </div>
+            
+            <input type="text" id="linkTitle" placeholder="Título">
+            <input type="text" id="linkUrl" placeholder="URL">
+            <button id="buttonEnlace">Añadir Link</button>
+        
+            <h2>Lista de Links</h2>
+            <ul id="linkList"></ul>
+          </div>
+    
+    </section>
+
+    <section id="sectionPassword">
+        <div class="containerPassword">
+           <div><h1>Generador de Contraseñas</h1></div> 
+           <div id="cuadritoContraseña">
+            
+            
+            <label for="lengthSelect">Longitud de la Contraseña:</label>
+            
+            <input type="number" id="lengthSelect" min="12" max="50" required>
+        
+        
+        </div>
+        <div>
+    
+            <button id="buttonPassword">Generar Contraseña</button>
+        </div>
+           
+        </div>
+    
+        <div>
+    
+            <p id="result" class="result"></p>
+    
+        </div>
+    </section>
+
+
+  </div>
+   
+      
+        <script src="js\contraseña.js"></script>
+    <script src="js\enlaces.js"></script>
+     <script src="js\tiempo.js"></script>
+     <script src="js\reloj.js"></script>
+<script src="js\imagen.js"></script>
 </body>
 </html>
