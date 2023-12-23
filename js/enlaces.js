@@ -21,21 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
       exportarLinks();
     }
   }
-  
   function eliminarLink(index) {
-    const links = JSON.parse(localStorage.getItem('links')) || [];
-  
-    if (index >= 0 && index < links.length) {
-      const actualizarLinks = links.filter((_, i) => i !== index);
-  
-      localStorage.setItem('links', JSON.stringify(actualizarLinks));
-  
-      exportarLinks();
-    } else {
-      console.log('Error');
+  const links = JSON.parse(localStorage.getItem('links')) || [];
+
+  if (index >= 0 && index < links.length) {
+    const actualizarLinks = [];
+
+    for (let i = 0; i < links.length; i++) {
+      if (i !== index) {
+        actualizarLinks.push(links[i]);
+      }
     }
+
+    localStorage.setItem('links', JSON.stringify(actualizarLinks));
+
+    exportarLinks();
+  } else {
+    console.log('Error');
   }
-  
+}
   function exportarLinks() {
     const linkList = document.getElementById('linkList');
     linkList.innerHTML = '';
