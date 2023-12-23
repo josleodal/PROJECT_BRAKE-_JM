@@ -20,15 +20,14 @@ function generarContraseña() {
     }
 
     for (let i = 0; i < length; i++) {
-        const random = Math.floor(Math.random() * remix.length);
-        password += remix.charAt(random);
+        const randomIndex = Math.floor(Math.random() * remix.length);
+        password += remix[randomIndex];
     }
 
-    const result = document.getElementById('result')
+    const result = document.getElementById('result');
 
-   result.innerHTML = `<p>Contraseña: ${password}<p>`;
+    result.innerHTML = `<p>Contraseña: ${password}<p>`;
 }
-
 
 const buttonPassword = document.getElementById("buttonPassword")
 
