@@ -1,18 +1,4 @@
-var myHeaders = new Headers();
-myHeaders.append("X-Requested-With", "XMLHttpRequest");
-
-var requestOptions = {
-  method: 'GET',
-  headers: myHeaders,
-  redirect: 'follow'
-};
-
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/10344346102", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-
-  const city = "Seville";
+const city = "Seville";
 const apiKey = "1f3a6c709f864563a9b174036232012";
 
 const getClima = async () => {
